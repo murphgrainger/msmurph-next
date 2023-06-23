@@ -2,26 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: 'Rubik80sFade-Regular';
+  src: url('/fonts/Rubik80sFade-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'TiltWarp-Regular';
+  src: url('/fonts/TiltWarp-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TiltNeon-Regular';
+  src: url('/fonts/TiltNeon-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree-VariableFont_wght';
+  src: url('/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Figtree-VariableFont_wght', fallback, sans-serif;
+  color: white;
+  background: radial-gradient(circle, rgba(252,198,188,1) 0%, rgba(255,167,86,1) 55%);
 }
